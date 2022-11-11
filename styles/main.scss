@@ -50,8 +50,9 @@ a:hover {
 }
 
 hr {
-  height: 2px;
-  background: #616161;
+  height: 1px;
+  border: none;
+  background: #e8e8e8;
 }
 
 .page {
@@ -1407,4 +1408,30 @@ blockquote p:last-child {
 .remark-highlight {
   overflow: auto;
   max-width: calc(100vw - 30px);
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.btn-copy {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  background: #45463f;
+  border: #33393f 1px solid;
+  border-radius: 4px;
+  color: #f2f5f7;
+  padding: 12px 20px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  &:hover {
+    background: #6c6c6c;
+  }
+}
+
+.btn-copy-text {
+  font-size: 14px;
 }
